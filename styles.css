@@ -241,3 +241,224 @@ button {
 body {
   animation: backgroundZoom 3s ease-in forwards;
 }
+
+/* General CSS from your previous file stays unchanged */
+
+/* About Me Section */
+/*#aboutme {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  padding: 0 10%;
+}*/
+
+#aboutme {
+  background-color: rgb(6, 7, 12);
+  font-family: 'Inter', sans-serif;
+  background-image: url(R.jpg); /* Make sure R.jpg exists or update the image */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Left Section */
+.aboutme-left {
+  display: flex;
+  align-items: center;
+  padding-top: 150px;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  padding: 25px 0;
+}
+
+h3 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #3FA2F6;
+  padding-bottom: 40px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: lightgray;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+
+/* Icons */
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.social-icon {
+  padding-bottom: 50px;
+}
+
+.social-icon i {
+  font-size: 1.2rem;
+  color: #3FA2F6;
+  border: 1px solid #3FA2F6;
+  border-radius: 50px;
+  padding: 8px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.12s, box-shadow 0.12s;
+  cursor: pointer;
+}
+
+.social-icon i:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px #3FA2F6;
+}
+
+/* Right Section */
+.aboutme-right {
+  transition: background-color 3s, box-shadow 3s;
+  cursor: pointer;
+}
+
+.aboutme-right:hover {
+  background-color: rgba(6, 7, 12, 0.705);
+  box-shadow:
+    0 0 20px rgb(6, 7, 12),
+    0 0 50px rgb(6, 7, 12),
+    0 0 100px rgb(6, 7, 12),
+    0 0 200px rgb(6, 7, 12);
+}
+
+/* Apply Animations (same as previous) */
+h1 {
+  animation: fadeIn 1.2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+h3 {
+  animation: fadeIn 1.4s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+}
+
+p {
+  animation: fadeIn 1.6s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.6s;
+}
+
+.social-icon {
+  animation: fadeIn 2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+.nav-item,
+.left-section {
+  animation: fadeInTop 1s ease-in forwards;
+  opacity: 0;
+}
+
+body {
+  animation: backgroundZoom 3s ease-in forwards;
+}
+
+
+/* General CSS from your previous file stays unchanged */
+
+/* Projects Section */
+#projects {
+  background-color: rgb(6, 7, 12);
+  font-family: 'Inter', sans-serif;
+  background-image: url(R.jpg); /* Use a background image if necessary */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  padding: 0 10%;
+  color: white;
+}
+
+.content {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  padding: 25px 0;
+}
+
+/* Project Card Layout */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-img img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.project-details {
+  padding-top: 15px;
+}
+
+.project-details h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3FA2F6;
+}
+
+.project-details p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: lightgray;
+  padding-top: 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #3FA2F6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: #2e88c4;
+}
